@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: Spring AI
+  ai:
+    ollama:
+      chat:
+        options:
+          model: llama3
+  docker:
+    compose:
+      profiles:
+        active: "local"
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor: DEBUG
+#    root: debug

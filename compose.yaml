@@ -1,0 +1,16 @@
+version: '3'
+services:
+  llama3:
+    profiles:
+      - "local"
+    container_name: llama3
+    image: kcsurapaneni/ollama-llama3:latest
+    ports:
+      - "${HOST_PORT:-11434}:11434"
+  phi3:
+    profiles:
+      - "local"
+    container_name: phi3
+    image: ghcr.io/kcsurapaneni/ollama-phi3:20240708-012629
+    ports:
+      - "${HOST_PORT:-11435}:11434"
