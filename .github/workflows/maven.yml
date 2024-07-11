@@ -30,7 +30,7 @@ jobs:
         distribution: 'corretto'
         cache: maven
     - name: Run the test cases
-      run: mvn -B test
+      run: mvn -B clean test
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
