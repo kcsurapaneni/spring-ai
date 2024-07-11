@@ -15,7 +15,7 @@ class TestcontainersConfiguration {
     @ServiceConnection
     OllamaContainer ollama() {
         return new OllamaContainer(DockerImageName
-                .parse("kcsurapaneni/ollama-llama3:latest")
+                .parse("ghcr.io/kcsurapaneni/ollama-phi3:20240708-012629")
                 .asCompatibleSubstituteFor("ollama/ollama")
         );
     }
